@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --color__primary: #228fee;
+    --color__primary__dark: #0963b1;
+    --color__primary_light: #c5e4ff;
+    --color__primary__darker: #0011ff;
+    --color__secondary: #ff7b00;
+    --color__secondary__dark: #d26600;
+    --color__text__primary: #464646;
+    --bg-white: #fff;
+    --bg-off_white: #f4f4ff;
+
+    --line__color: #dddddd;
+
+    --font__primary: "Poppins", sans-serif;
+
+    --btn_transition__1: all 200ms linear;
+    --btn_transition__2: all 100ms linear;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-white);
+    font-family: var(--font__primary);
+}
+
+#tp-header {
+    position: relative;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: var(--color__primary);
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#test-bar {
+    height: 25vh;
+    width: 80vw;
+    background: var(--color__primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+#test-bar-text {
+    display: flex;
+    margin: 0 auto;
+    width: 70vw;
+    font-size: 3rem;
+}
+
+#test-section {
+    position: relative;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 64px auto;
+}
+
+#test-section p {
+    color: var(--color__text__primary);
+    text-decoration: underline;
+    font-size: 1.25rem;
+    margin-top: 32px;
+}
+
+.qf {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+
+.q-section {
+    color: var(--color__text__primary);
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.choice-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choice {
+    margin: 12px 12px 0 0;
+}
+
+.choice-section input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 100px;
+    font-size: 1rem;
+    border: 1px solid var(--color__primary);
+    color: var(--color__primary);
+    background: var(--bg-off_white);
+    transition: var(--btn_transition__2);
+}
+
+.choice-section input[type="radio"]::before {
+    content: attr(label);
+    text-align: center;
+}
+
+.choice-section input[type="radio"]:hover,
+.choice-section input[type="radio"]:focus,
+.choice-section input[type="radio"]:checked {
+    background: var(--color__primary);
+    color: white;
+}
+
+#submit-field {
+    display: flex;
+    justify-content: end;
+}
+
+#btn-submit {
+    display: inline;
+    background: var(--color__secondary);
+    color: white;
+    border-radius: 100px;
+    padding: 8px 108px;
+    cursor: pointer;
+    transition: var(--btn_transition__2);
+}
+
+#btn-submit:hover,
+#btn-submit:focus {
+    background: var(--color__secondary__dark);
+}

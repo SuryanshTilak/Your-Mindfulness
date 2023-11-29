@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en bn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="icons/yourmindfulness-logo.svg"
+            type="image/x-icon"
+        />
+        <title>Your Mindfulness</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+        />
+        <link rel="stylesheet" href="./styles/chatbot.css" />
+        <link rel="stylesheet" href="./styles/main.css" />
+    </head>
+    <body>
+        <!-- mp = main page -->
+        <header id="mp-header">
+            <!-- ht = header-top -->
+            <div id="mp-ht">
+                <div id="helpline-number-section">
+                    <span class="material-symbols-outlined">
+                        phone_in_talk
+                    </span>
+                    <div id="helpline-number">9999999999</div>
+                </div>
+                <div class="logo">Your Mindfulness</div>
+                <div class="header-opt">
+                    <div id="langbox">
+                        <span>Language</span>
+                        <div class="lang-container">
+                            <div id="lang-en" class="lang-item">English</div>
+                            <div id="lang-bn" class="lang-item">বাংলা</div>
+                            <div id="lang-hi" class="lang-item">हिंदी</div>
+                            <div id="lang-as" class="lang-item">অসমীয়া</div>
+                            <div id="lang-kn" class="lang-item">ಕನ್ನಡ</div>
+                            <div id="lang-gu" class="lang-item">ગુજરાતી</div>
+                            <div id="lang-ml" class="lang-item">മലയാളം</div>
+                            <div id="lang-mr" class="lang-item">मराठी</div>
+                            <div id="lang-or" class="lang-item">ଓଡ଼ିଆ</div>
+                            <div id="lang-pa" class="lang-item">ਪੰਜਾਬੀ</div>
+                            <div id="lang-ta" class="lang-item">தமிழ்</div>
+                            <div id="lang-te" class="lang-item">తెలుగు</div>
+                            <div id="lang-ur" class="lang-item">اردو</div>
+                        </div>
+                    </div>
+                    <div id="btn-login">
+                        <span>Registration</span>
+                        <div class="regbox">
+                            <a href="./en/en-login.html"><div id="reg-user" class="reg">As User</div></a>
+                            <div id="reg-specialist" class="reg">
+                                As Psychiatrist
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hb = header-bottom -->
+            <div class="hb">
+                <div class="hb-container">
+                    <div id="mh-knowledge" class="hb-item">
+                        <span>Learn About Mental Health</span>
+                        <div class="dropdown-container">
+                            <div class="dd-item">Mental Health Overall</div>
+                            <div class="dd-item">Depression</div>
+                            <div class="dd-item">Anxiety</div>
+                            <div class="dd-item">ADHD</div>
+                            <div class="dd-item">Bipolar</div>
+                            <div class="dd-item">PTSD</div>
+                            <div class="dd-item">Addiction</div>
+                            <div class="dd-item">Eating Disorder</div>
+                            <div class="dd-item">Psychosis</div>
+                            <div class="dd-item">Schizophrenia</div>
+                            <div class="dd-item">Self Harm</div>
+                            <div class="dd-item">Suicidal Mental State</div>
+                        </div>
+                    </div>
+                    <div id="support" class="hb-item">
+                        <span>Support</span>
+                        <div class="dropdown-container">
+                            <div class="dd-item">Professional Support</div>
+                            <div class="dd-item">Community Support</div>
+                        </div>
+                    </div>
+                    <div id="resource" class="hb-item">
+                        <span>Resource Directory</span>
+                        <div class="dropdown-container">
+                            <div class="dd-item">Articles</div>
+                            <div class="dd-item">Videos</div>
+                            <div class="dd-item">Books</div>
+                        </div>
+                    </div>
+                    <div id="wellness-checklist" class="hb-item">
+                        <span>Wellness Checklist</span>
+                        <div class="dropdown-container">
+                            <div class="dd-item">Eating</div>
+                            <div class="dd-item">Sleeping</div>
+                            <div class="dd-item">Physical Activity</div>
+                            <div class="dd-item">Attention</div>
+                        </div>
+                    </div>
+                    <div id="tracker" class="hb-item">
+                        <span>Tracking Tool</span>
+                        <div class="dropdown-container">
+                            <div class="dd-item">
+                                Mental Health Progess Tracker
+                            </div>
+                            <div class="dd-item">
+                                Daily Mood Tracker
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="banner">
+            <div id="banner-container">
+                <div class="slides fade" id="slide-1">Slide-1</div>
+                <div class="slides fade" id="slide-2">Slide-2</div>
+                <div class="slides fade" id="slide-3">Slide-3</div>
+                <div class="slides fade" id="slide-4">Slide-4</div>
+                <div class="slides fade" id="slide-5">Slide-5</div>
+                <div id="slide-control">
+                    <span class="controllers" id="controller-1"></span>
+                    <span class="controllers" id="controller-2"></span>
+                    <span class="controllers" id="controller-3"></span>
+                    <span class="controllers" id="controller-4"></span>
+                    <span class="controllers" id="controller-5"></span>
+                </div>
+                <span
+                    class="material-symbols-outlined arrow"
+                    id="left-arrow"
+                    onclick="prevSlide()"
+                >
+                    chevron_left
+                </span>
+                <span
+                    class="material-symbols-outlined arrow"
+                    id="right-arrow"
+                    onclick="showSlides()"
+                >
+                    chevron_right
+                </span>
+            </div>
+        </div>
+        <div id="btn-test-container">
+            <a href="../en/en-test.html"
+                ><button id="btn-test">Take A Test</button></a
+            >
+        </div>
+        <!-- chatbot -->
+        <div class="chatbot-container">
+            <button class="chatbot-toggler">
+                <span class="material-symbols-rounded">mode_comment</span>
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn material-symbols-outlined"
+                        >close</span
+                    >
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <span class="material-symbols-outlined">smart_toy</span>
+                        <p>Hi there 👋<br />How can I help you today?</p>
+                    </li>
+                </ul>
+                <div class="chat-input">
+                    <textarea
+                        placeholder="Enter a message..."
+                        spellcheck="false"
+                        required
+                    ></textarea>
+                    <span id="send-btn" class="material-symbols-rounded"
+                        >send</span
+                    >
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/chatbot.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color__primary: #228fee;
+    --color__primary__dark: #0963b1;
+    --color__primary_light: #c5e4ff;
+    --color__primary__darker: #0011ff;
+    --color__secondary: #ff7b00;
+    --color__secondary__dark: #d26600;
+    --color__text__primary: #464646;
+    --bg-white: #fff;
+    --bg-off_white: #f4f4ff;
+
+
+    --line__color: #dddddd;
+
+    --font__primary: "Poppins", sans-serif;
+
+    --btn_transition__1: all 200ms linear;
+    --btn_transition__2: all 100ms linear;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: var(--font__primary);
+}
+
+.m-header {
+    height: 10vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    background: var(--bg-white);
+}
+
+.m-header::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--line__color);
+    bottom: 0;
+    right: 0;
+}
+
+#lp-container {
+    height: calc(100vh - 10vh);
+    background: var(--bg-white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lang-container {
+    width: 80vw;
+}
+
+#text-preferred-lang {
+    margin: 64px 0 64px 0;
+    font-size: 3rem;
+    color: var(--color__text__primary);
+}
+
+#lang-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 2rem;
+    margin: 0 24px 24px 0;
+    padding: 12px 32px;
+    color: white;
+    background: var(--color__primary);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    text-decoration: none;
+}
+.lang a:link {
+    text-decoration: none;
+    color: var(--color__primary);
+}
+
+.lang a:visited {
+    color: var(--color__primary);
+    text-decoration: none;
+}
+
+.lang:hover {
+    color: white;
+    background: var(--color__primary__dark);
+}
+
+.lang a:hover {
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--color__primary);
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
